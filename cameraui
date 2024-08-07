@@ -1,0 +1,85 @@
+{
+  "_bridge" : {
+    "port" : 35429,
+    "username" : "0E:84:88:81:07:D0"
+  },
+  "atHomeSwitch" : true,
+  "cameras" : [
+    {
+      "forcePrebuffering" : false,
+      "hksvConfig" : {
+        "acodec" : "libfdk_aac",
+        "audio" : true,
+        "maxFPS" : 30,
+        "maxHeight" : 1080,
+        "maxWidth" : 1920,
+        "source" : "-i rtsp://192.168.4.60:8554/cam",
+        "vcodec" : "libx264"
+      },
+      "hsv" : true,
+      "manufacturer" : "Logitech",
+      "model" : "C920S",
+      "motion" : true,
+      "motionTimeout" : 15,
+      "mqtt" : {
+
+      },
+      "name" : "Living Room",
+      "prebufferLength" : 5,
+      "prebuffering" : false,
+      "smtp" : {
+        "email" : "Living Room"
+      },
+      "unbridge" : false,
+      "videoConfig" : {
+        "acodec" : "libfdk_aac",
+        "audio" : true,
+        "debug" : true,
+        "forceMax" : true,
+        "maxFPS" : 30,
+        "maxHeight" : 1080,
+        "maxStreams" : 15,
+        "maxWidth" : 1920,
+        "readRate" : false,
+        "rtspTransport" : "tcp",
+        "source" : "-i rtsp://192.168.4.60:8554/cam",
+        "stillImageSource" : "-i /dev/video0",
+        "subSource" : "-i rtsp://192.168.4.60:8554/cam",
+        "vcodec" : "libx264"
+      },
+      "videoanalysis" : {
+        "active" : true
+      }
+    }
+  ],
+  "ftp" : {
+    "active" : false,
+    "port" : 5050,
+    "useFile" : false
+  },
+  "http" : {
+    "active" : false,
+    "localhttp" : false,
+    "port" : 7272
+  },
+  "logLevel" : "debug",
+  "mqtt" : {
+    "active" : false,
+    "port" : 1883,
+    "tls" : false
+  },
+  "name" : "CameraUI",
+  "options" : {
+    "videoProcessor" : "/usr/bin/ffmpeg"
+  },
+  "platform" : "CameraUI",
+  "port" : 8081,
+  "smtp" : {
+    "active" : false,
+    "port" : 2727,
+    "space_replace" : "+"
+  },
+  "ssl" : {
+    "active" : false
+  }
+}
